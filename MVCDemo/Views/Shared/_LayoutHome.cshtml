@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @*<title>@ViewBag.Title - My ASP.NET Application</title>*@
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="~/Content/styles.css" rel="stylesheet" />
+
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body style="background-color:#fdf8ff">
+
+    
+
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#355088" sstyle="color:white">
+        <header>
+            <nav class="navbar" id="top">
+                <div class="nav-wrapper">
+
+                    <ul id="nav-mobile" class="left hide-on-med-and-down" style="margin-left:80px">
+                        <li><a target="_blank" href="https://www.slideshare.net/AspireSystems"><i class="fa fa-slideshare" aria-hidden="true"></i></a></li>
+                        <li>
+                            <a target="_blank" href="https://www.slideshare.net/AspireSystems">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/aspiresystemsindia"> <i class="fa fa-youtube-square"></i></a>
+                        </li>
+                        <li><a target="_blank" href="https://www.facebook.com/AspireSystems"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/aspiresystems"><i class="fa fa-twitter-square"></i></a></li>
+                        <li><a target="_blank" href="https://plus.google.com/+Aspiresys"><i class="fa fa-google-plus-square"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/company/aspire-systems?trk=company_name"><i class="fa fa-linkedin-square"></i></a></li>
+                    </ul>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right:100px">
+                        <li><a target="_blank" href="http://blog.aspiresys.com/">Blog</a></li>
+                        <li><a target="_blank" href="http://www.aspiresys.com/newsletter">Newsteller</a></li>
+                        <li><a target="_blank" href="http://www.aspiresys.com/contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+
+
+        </header>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Employee Management", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <br /><br /><br />
+        @RenderBody()
+     </div>
+
+       
+
+
+
+
+
+
+
+        @*<div class="container body-content">
+                <br /><br /><br /><br /><br /><br />
+                @RenderBody()
+                <hr />
+
+
+            </div>*@
+
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+        <script src="~/Scripts/scripts.js"></script>
+</body>
+<footer id="footer" class="bg-inverse text-white ">
+
+    <footer class="page-footer" id="bottombut">
+        <div class="container">
+            <div class="row">
+
+
+                <p class="grey-text text-lighten-4 left">
+                    <a style="color:white" target="_blank" href="http://www.aspiresys.com/careers">Product Engineering </a>|
+                    <a style="color:white" target="_blank" href="http://www.aspiresys.com/in-the-news"> Enterprise Solution </a>|
+                    <a style="color:white" target="_blank" href="http://www.aspiresys.com/media-kit"> Independent testing Services</a>|
+                    <a style="color:white" target="_blank" href="http://www.aspiresys.com/terms-of-use"> Infrastructure &amp; Application Support </a>|
+                    <a style="color:white" target="_blank" href="http://www.aspiresys.com/privacy"> Bussiness Intelligence &amp; Analytics </a>|
+                    <a style="color:white" target="_blank" href="http://www.aspiresys.com/services/enterprise-applications">Enterprise Application</a> 
+                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;
+                    <a class="white-text text-lighten-3" target="_blank" href="http://www.aspiresys.com/sitemap">Site Map</a>
+                </p>
+
+
+            </div>
+        </div>
+        <div class="footer-copyright" id="bottom">
+            <div class="container">
+
+                <p class="grey-text text-lighten-4 left">
+                    <a style="color:white" target="_blank" href="http://www.aspiresys.com/careers">Carrer </a>|<a style="color:white" href="http://www.aspiresys.com/in-the-news"> In the News </a>|<a style="color:white" href="http://www.aspiresys.com/media-kit"> Media Kit </a>|
+                    <a style="color:white" target="_blank" href="http://www.aspiresys.com/terms-of-use"> Terms of Use </a>|<a style="color:white" href="http://www.aspiresys.com/privacy"> Pirvacy</a>
+                </p>
+                <p class="grey-text text-lighten-4 right" href="#!">&copy 1998 - 2017 Aspire Systems</p>
+            </div>
+        </div>
+    </footer>
+</footer>
+
+</html>

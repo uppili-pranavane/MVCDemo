@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Welcome";
+}
+
+
+<div class="jumbotron">
+    <center>
+        <img src="https://www.freshersspot.com/wp-content/uploads/2016/07/aspire-logo.png" width="70%" height="260px" />
+        <br />
+        <br />
+
+
+        <p>
+            <a href="http://www.aspiresys.com/" class="btn btn-primary btn-lg " target="_blank">Learn more &raquo;</a>
+        </p>
+    </center>
+
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h4>Employee Management</h4>
+        <p>
+            Grid Display of the Employee Details Linked with Database containing details
+        </p>
+        <p>
+            <a class="btn btn-default" href="@Url.Action("Index","Employee")">Table - View &emsp;<i class="fa fa-table"></i></a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h4>Add Employee Details  (Admin-Only)</h4>
+        <p>
+            To Enter enter new Employee details in to the main database containg Employee's data
+        </p>
+        <p>
+            <a class="btn btn-default" href="@Url.Action("Create","Employee")">Enter Details &emsp;<i class="fa fa-plus"></i></a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h4>Data-Base Acess (Admin-Only)</h4>
+        <p>
+            To Enter enter new Employee details in to the main database containg Employee's data
+        </p>
+        <p>
+            <a class="btn btn-default" href="@Url.Action("Index","Employee")">Data - Base &emsp;<i class="fa fa-database"></i></a>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,76 @@
+#top{
+    background-color: #263238;
+}
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  footer {
+    border-top: 0px solid #f3f3f3;
+    padding: 10px 0;
+}
+
+  main {
+    flex: 1 0 auto;
+  }
+  body {
+    background-color: #f5e6ff;
+}
+#bottom
+{
+    background-color: #424242;
+    color:white;
+}
+#bottombut
+{
+    background-color: #000000;
+    font-size:75%;
+    
+}#first
+{
+
+   background-image: url("http://www.aspiresys.com/templates/aspire_rwd/images/banner-oracle-retail-v16.jpg") ; 
+
+}
+#second
+{
+    background-image: url("http://www.aspiresys.com/templates/aspire_rwd/images/Banner-AURAS.jpg");
+}
+#third
+{
+    background-image: url("http://www.aspiresys.com/templates/aspire_rwd/images/Banner-DevOps.jpg");
+}
+#fourth
+{
+    background-image: url("http://www.aspiresys.com/templates/aspire_rwd/images/Banner-Techcello.jpg");
+}
+#fifth
+{
+    background-image: url("http://www.aspiresys.com/templates/aspire_rwd/images/Banner_Microservices.jpg");
+}
+#sixth
+{
+    background-image: url("http://www.aspiresys.com/templates/aspire_rwd/images/Banner_Test-Automation.jpg");
+}
+
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+} 
